@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using NewsFeedApi.Services.Implementation;
+﻿using Microsoft.AspNetCore.Mvc;
 using NewsFeedApi.Services.Interfaces;
 
 namespace NewsFeedApi.Controllers

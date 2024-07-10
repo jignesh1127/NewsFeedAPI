@@ -1,4 +1,4 @@
-﻿using NewsFeedApi.Models;
+﻿using NewsFeedApi.Services.Models;
 
 namespace NewsFeedApi.Services.Interfaces
 {

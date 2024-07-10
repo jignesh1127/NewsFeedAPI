@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsFeedApi", "NewsFeedApi.csproj", "{28CE752E-B907-4060-A200-8F45040DCF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsFeedApi.Test", "..\NewsFeedApi.Test\NewsFeedApi.Test.csproj", "{50D452E4-DC1B-47EA-BA7D-9A918DF1C58E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsFeedApi.Test", "..\NewsFeedApi.Test\NewsFeedApi.Test.csproj", "{50D452E4-DC1B-47EA-BA7D-9A918DF1C58E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsFeedApi.Services", "..\NewsFeedApi.Services\NewsFeedApi.Services.csproj", "{FB866CF4-B054-4E4F-B555-1F08BB12357E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{50D452E4-DC1B-47EA-BA7D-9A918DF1C58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50D452E4-DC1B-47EA-BA7D-9A918DF1C58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50D452E4-DC1B-47EA-BA7D-9A918DF1C58E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB866CF4-B054-4E4F-B555-1F08BB12357E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB866CF4-B054-4E4F-B555-1F08BB12357E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB866CF4-B054-4E4F-B555-1F08BB12357E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB866CF4-B054-4E4F-B555-1F08BB12357E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

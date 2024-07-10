@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
-using NewsFeedApi.Models;
+using NewsFeedApi.Services.Models;
 using NewsFeedApi.Services.Interfaces;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace NewsFeedApi.Services.Implementation
 {
@@ -16,6 +17,12 @@ namespace NewsFeedApi.Services.Implementation
             _memoryCache = memoryCache;
         }
 
+        /// <summary>
+        /// Gets the newest stories from Hacker News.
+        /// </summary>
+        /// <param name="page">The page number.</param>
+        /// <param name="pageSize">The number of stories per page.</param>
+        /// <returns>A list of stories.</returns>
         public async Task<IList<Story>> GetNewestStoriesAsync()
         {
             if (!_memoryCache.TryGetValue("newestStories", out IList<Story> stories))
