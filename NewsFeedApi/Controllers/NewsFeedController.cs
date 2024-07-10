@@ -25,6 +25,7 @@ namespace NewsFeedApi.Controllers
         public async Task<IActionResult> Search([FromQuery] string query)
         {
             var stories = await _newsService.GetNewestStoriesAsync();
+
             var filteredStories = stories.Where(s => s.Title.Contains(query, StringComparison.OrdinalIgnoreCase));
             return Ok(filteredStories);
         }
